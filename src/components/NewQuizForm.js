@@ -27,7 +27,7 @@ export default function NewQuizForm() {
       const fullCard = { front: card.front, back: card.back, id: uuidv4() };
       cardIds.push(fullCard.id);
       dispatch(addCard(fullCard));
-      return;
+      return fullCard;
     });
 
     // create the new quiz here
